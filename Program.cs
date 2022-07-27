@@ -10,9 +10,9 @@
     public string Image { get; set; }
    
 
-    public void SaveData()
+    public virtual void SaveData()
     {
-        // Save to database
+        // Save the vehicle to database
     }
 
     public void Drive()
@@ -44,8 +44,14 @@ public class user : Vehicle
         // Create a user
     }
 
+    public override void SaveData()
+    {
+        //save the user to database
+    }
+
     public void AssignVehicleToUser()
     {
+       
         // Assign the vehicle to a user
     }
 
